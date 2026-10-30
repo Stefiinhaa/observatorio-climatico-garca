@@ -1,0 +1,23 @@
+# Ambiente virtual Python
+venv/
+.venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos temporários do DuckDB (locks/wal)
+*.duckdb.wal
+*.duckdb.tmp
+
+# Variáveis de ambiente e arquivos sensíveis
+.env
+*.secret
+
+# Arquivos de sistema operacional e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
