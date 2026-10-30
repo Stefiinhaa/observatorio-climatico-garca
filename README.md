@@ -34,26 +34,25 @@ Repositório oficial do projeto **Observatório Climático Local**, desenvolvido
 ## 4. Preparação do Ambiente e Instalação das Dependências
 
 Certifique-se de possuir o Python 3.10+ instalado. No terminal, dentro da pasta raiz do projeto, execute:
-# 1. Criar o ambiente virtual
+**1. Criar o ambiente virtual**
 python -m venv .venv
 
-# 2. Ativar o ambiente virtual
-# No Windows (PowerShell / CMD):
+**2. Ativar o ambiente virtual**
+**No Windows (PowerShell / CMD):**
 .venv\Scripts\activate
-# No Linux / macOS:
+**No Linux / macOS:**
 source .venv/bin/activate
 
-# 3. Instalar as dependências necessárias
+**3. Instalar as dependências necessárias**
 pip install -r requirements.txt
 
 ## 5. Ordem e Comandos de Execução (Como Gerar e Acessar o Banco)
 
-Execute os scripts na seguinte ordem:
-# Passo 1: Realizar a coleta na API Open-Meteo e salvar dados/clima_garca_bruto.json
+**Execute os scripts na seguinte ordem:**
+Passo 1: Realizar a coleta na API Open-Meteo e salvar dados/clima_garca_bruto.json
 python coleta.py
 
-# Passo 2: Tratar e validar os dados com pandas, carregar sem duplicidades no DuckDB
-# e exibir no terminal os resultados das consultas SQL e dos 3 KPIs
+**Passo 2: Tratar e validar os dados com pandas, carregar sem duplicidades no DuckDB e exibir no terminal os resultados das consultas SQL e dos 3 KPIs**
 python banco.py
 
 Nota sobre Idempotência: A tabela clima_diario utiliza chave primária composta (localidade, data_registro) e inserção INSERT OR REPLACE. Executar python banco.py repetidas vezes não gera registros duplicados.
