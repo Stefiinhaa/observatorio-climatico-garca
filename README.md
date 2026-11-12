@@ -22,8 +22,11 @@ Repositório oficial do projeto **Observatório Climático Local**, desenvolvido
 │   └── observatorio_garca.duckdb      # Banco de dados analítico DuckDB
 ├── docs/
 │   └── escopo-1/
-│       └── AE2/
-│           └── relatorio_tecnico_ae2_garca.pdf  # Relatório Técnico e Analítico da AE2
+│       ├──AE1/
+│       │    └──Relatorio Tecnico e Analitico AE1 - Garca SP - Stefani.pdf  # Relatório Técnico e Analítico da AE1
+│       └──AE2/
+│            └──Desenho da Solucao de Dados AE2-2 - Garca SP # Relatório Técnico e Analítico da AE2
+│ 
 ├── .gitignore                         # Exclusão de venv, caches e arquivos temporários
 ├── coleta.py                          # Script de coleta via Python + Requests
 ├── banco.py                           # Tratamento com pandas, validação e carga no DuckDB
